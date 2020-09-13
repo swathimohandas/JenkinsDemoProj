@@ -34,7 +34,7 @@ pipeline {
                 echo 'Sonar Scanner'
                	//def scannerHome = tool 'SonarQube Scanner 3.0'
 			    withSonarQubeEnv('SonarQube Server') {
-			    	sh '/opt/sonarqube/sonar_scanner'
+			    	sh '/opt/sonar-scanner/bin/sonar-scanner'
 			    }
             }
         }
