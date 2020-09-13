@@ -47,6 +47,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo '## TODO DEPLOYMENT ##'
+		    rtMaven.deployer.deployArtifacts buildInfo
             }
         }
     }
