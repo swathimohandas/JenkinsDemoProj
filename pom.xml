@@ -69,11 +69,11 @@
 	<distributionManagement>
     <snapshotRepository>
       <id>artifactory-server</id>
-      <url>http://52.177.19.5:8081/repository/maven-snapshots/</url>
+      <url>http://52.177.19.5:8081/artifactory/libs-snapshot/</url>
     </snapshotRepository>
 	<repository>
 	  <id>artifactory-server</id>
-      <url>http://52.177.19.5:8081/repository/maven-releases/</url>
+      <url>http://52.177.19.5:8081/artifactory/libs-release/</url>
     </repository>
   
   </distributionManagement>
