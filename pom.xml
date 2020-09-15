@@ -69,11 +69,11 @@
 	<distributionManagement>
     <snapshotRepository>
       <id>artifactory-server</id>
-      <url>http://52.252.56.254:8081/artifactory/libs-snapshot/</url>
+      <url>http://52.252.56.254:8081/artifactory/libs-snapshot-local/</url>
     </snapshotRepository>
 	<repository>
 	  <id>artifactory-server</id>
-      <url>http://52.252.56.254:8081/artifactory/libs-release/</url>
+      <url>http://52.252.56.254:8081/artifactory/libs-release-local/</url>
     </repository>
   
   </distributionManagement>
