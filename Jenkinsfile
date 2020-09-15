@@ -47,7 +47,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo '## TODO DEPLOYMENT ##'
-		sh 'mvn deploy'    
+		sh 'mvn clean deploy'    
             }
         }
     }
