@@ -109,8 +109,9 @@
       <url>http://40.75.81.233:8081/artifactory/libs-snapshot-local/</url>
     </snapshotRepository>
 	<repository>
-	  <id>artifactory-server</id>
-      <url>http://40.75.81.233:8081/artifactory/libs-release-local/</url>
+	  <id>central</id>
+        <name>devops-releases</name>
+        <url>http://40.75.81.233:8081/artifactory/libs-release-local</url>
     </repository>
   
   </distributionManagement>
