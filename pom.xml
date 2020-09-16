@@ -110,7 +110,7 @@
     </snapshotRepository>
 	<repository>
 	  <id>central</id>
-        <name>devops-releases</name>
+        <name>artifactory-server</name>
         <url>http://40.75.81.233:8081/artifactory/libs-release-local</url>
     </repository>
   
