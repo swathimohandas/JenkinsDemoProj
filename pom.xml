@@ -107,11 +107,11 @@
 	<distributionManagement>
     <snapshotRepository>
       <id>artifactory-server</id>
-      <url>http://52.252.56.254:8081/artifactory/libs-snapshot-local/</url>
+      <url>http://40.75.81.233:8081/artifactory/libs-snapshot-local/</url>
     </snapshotRepository>
 	<repository>
 	  <id>artifactory-server</id>
-      <url>http://52.252.56.254:8081/artifactory/libs-release-local/</url>
+      <url>http://40.75.81.233:8081/artifactory/libs-release-local/</url>
     </repository>
   
   </distributionManagement>
