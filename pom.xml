@@ -106,11 +106,11 @@
 	<distributionManagement>
     <snapshotRepository>
       <id>artifactory-server</id>
-      <url>http://20.36.177.69:8081/artifactory/libs-snapshot-local/</url>
+      <url>http://52.179.155.179:8081/artifactory/libs-snapshot-local/</url>
     </snapshotRepository>
 	<repository>
 		<id>artifactory-server</id>
-        <url>http://20.36.177.69:8081/artifactory/libs-release-local</url>
+        <url>http://52.179.155.179:8081/artifactory/libs-release-local</url>
     </repository>
   
   </distributionManagement>
