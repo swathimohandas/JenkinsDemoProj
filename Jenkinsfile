@@ -1,6 +1,7 @@
 pipeline {
-	EMAIL_TO = 'swathimohandas18@gmail.com'
+	
     agent any
+	EMAIL_TO = 'swathimohandas18@gmail.com'
     stages {
         stage('Checkout') {
             steps {
