@@ -1,6 +1,5 @@
 pipeline {
-	
-    agent any
+   agent any
 	
     stages {
         stage('Checkout') {
@@ -65,11 +64,7 @@ pipeline {
         }
         failure {
             echo 'JENKINS PIPELINE FAILED'
-		EMAIL_TO = 'swathimohandas18@gmail.com'
-		emailext body: 'Check console output at $BUILD_URL to view the results. \n\n ${CHANGES} \n\n------------------- \n${BUILD_LOG,maxLines=100,escapeHtml=false},
-		to: "${EMAIL_TO}",
-		subject: 'Build failed in Jenkins: $PROJECT_NAME -#$BUILD_NUMBER'	
-        }
+		}
         unstable {
             echo 'JENKINS PIPELINE WAS MARKED AS UNSTABLE'
         }
