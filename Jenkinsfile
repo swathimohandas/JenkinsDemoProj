@@ -67,7 +67,7 @@ pipeline {
             echo 'JENKINS PIPELINE FAILED'
 	     emailext body: 'Check console output at $BUILD_URL to view the results. \n\n ${CHANGES} \n\n -------------------------------------------------- \n${BUILD_LOG, maxLines=100, escapeHtml=false}', 
                     to: 'swathimohandas18@gmail.com', 
-                    subject: 'Unstable build in Jenkins: $PROJECT_NAME - #$BUILD_NUMBER'	
+                    subject: 'Build failed in Jenkins: $PROJECT_NAME - #$BUILD_NUMBER'	
 	}
         unstable {
             echo 'JENKINS PIPELINE WAS MARKED AS UNSTABLE'
