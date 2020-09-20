@@ -65,9 +65,7 @@ pipeline {
         failure {
 		
             echo 'JENKINS PIPELINE FAILED'
-		mail to: 'swathimohandas18@gmail.com',
-                subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
-                body: "Something is wrong with ${env.BUILD_URL}"
+		emailext body: '', recipientProviders: [brokenBuildSuspects()], subject: 'Build Failure', to: 'swathimohandas18@gmail.com'
 		}
         unstable {
             echo 'JENKINS PIPELINE WAS MARKED AS UNSTABLE'
