@@ -64,6 +64,7 @@ pipeline {
         }
         failure {
             echo 'JENKINS PIPELINE FAILED'
+		emailext body: "$(err)",subject :'Failure', to :'swathimohandas18@gmail.com'
 		}
         unstable {
             echo 'JENKINS PIPELINE WAS MARKED AS UNSTABLE'
